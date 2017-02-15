@@ -62,7 +62,8 @@ class Footer extends React.Component {
             <div className='col-sm-5'>
               <h3 className='lead'><strong>Information</strong> and <strong>Copyright</strong></h3>
               <p>Powered by <strong>Node.js</strong>, <strong>MongoDB</strong> and <strong>React</strong> with Flux architecture and server-side rendering.</p>
-              <p>Copyright © 2014 - 2016 版权所有 盗版不究</p>
+              <p>Copyright © 2013-2017 爵盾实业有限公司 All Rights Reserved.</p>
+              <p>沪ICP备13039417号-1(备案号与网站一致)</p>
             </div>
             <div className='col-sm-7 hidden-xs'>
               <h3 className='lead'><strong>Leaderboard</strong> Top 5 Characters</h3>

@@ -55,7 +55,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className='navbar navbar-default navbar-static-top'>
+      <nav className='navbar navbar-default navbar-static-top cantainer'>
         <div className='navbar-header'>
           <button type='button' className='navbar-toggle collapsed' data-toggle='collapse' data-target='#navbar'>
             <span className='sr-only'>Toggle navigation</span>
@@ -75,21 +75,17 @@ class Navbar extends React.Component {
               <div className='tri'></div>
               <div className='tri invert'></div>
             </span>
-            NEF
-            <span className='badge badge-up badge-danger'>{this.state.onlineUsers}</span>
+            爵盾
+            {/*<span className='badge badge-up badge-danger'>{this.state.onlineUsers}</span>*/}
           </Link>
         </div>
         <div id='navbar' className='navbar-collapse collapse'>
-          <form ref='searchForm' className='navbar-form navbar-left animated' onSubmit={this.handleSubmit.bind(this)}>
-            <div className='input-group'>
-              <input type='text' className='form-control' placeholder={this.state.totalCharacters + ' characters'} value={this.state.searchQuery} onChange={NavbarActions.updateSearchQuery} />
-              <span className='input-group-btn'>
-                <button className='btn btn-default' onClick={this.handleSubmit.bind(this)}><span className='glyphicon glyphicon-search'></span></button>
-              </span>
-            </div>
-          </form>
           <ul className='nav navbar-nav'>
-            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/'>首页</Link></li>
+            <li><Link to='/stats'>公司简介</Link></li>
+            <li><Link to='/stats'>产品展示</Link></li>
+            <li><Link to='/stats'>联系我们</Link></li>
+
             <li><Link to='/stats'>Stats</Link></li>
             <li className='dropdown'>
               <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Top 100 <span className='caret'></span></a>
@@ -209,6 +205,14 @@ class Navbar extends React.Component {
             </li>
             <li><Link to='/add'>Add</Link></li>
           </ul>
+          <form ref='searchForm' className='navbar-form navbar-left animated' onSubmit={this.handleSubmit.bind(this)}>
+            <div className='input-group'>
+              <input type='text' className='form-control' placeholder={this.state.totalCharacters + ' characters'} value={this.state.searchQuery} onChange={NavbarActions.updateSearchQuery} />
+              <span className='input-group-btn'>
+                <button className='btn btn-default' onClick={this.handleSubmit.bind(this)}><span className='glyphicon glyphicon-search'></span></button>
+              </span>
+            </div>
+          </form>
         </div>
       </nav>
     );
