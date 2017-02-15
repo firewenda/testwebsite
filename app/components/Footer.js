@@ -24,15 +24,36 @@ class Footer extends React.Component {
   }
 
   render() {
-    let leaderboardCharacters = this.state.characters.map(function(character) {
+    let images = [
+      {
+        id: 1,
+        imgUrl: '/img/footer/1.gif'
+      },
+      {
+        id: 2,
+        imgUrl: '/img/footer/2.gif'
+      },
+      {
+        id: 3,
+        imgUrl: '/img/footer/3.gif'
+      }
+    ];
+    let leaderboardCharacters = images.map(function(character) {
       return (
-        <li key={character.characterId}>
-          <Link to={'/characters/' + character.characterId}>
-            <img className='thumb-md' src={'http://image.eveonline.com/Character/' + character.characterId + '_128.jpg'} />
-          </Link>
+        <li key={character.id}>
+          <img src={character.imgUrl} />
         </li>
       );
     });
+    // let leaderboardCharacters = this.state.characters.map(function(character) {
+    //   return (
+    //     <li key={character.characterId}>
+    //       <Link to={'/characters/' + character.characterId}>
+    //         <img className='thumb-md' src={'http://image.eveonline.com/Character/' + character.characterId + '_128.jpg'} />
+    //       </Link>
+    //     </li>
+    //   );
+    // });
 
     return (
       <footer>
@@ -41,8 +62,7 @@ class Footer extends React.Component {
             <div className='col-sm-5'>
               <h3 className='lead'><strong>Information</strong> and <strong>Copyright</strong></h3>
               <p>Powered by <strong>Node.js</strong>, <strong>MongoDB</strong> and <strong>React</strong> with Flux architecture and server-side rendering.</p>
-              <p>You may view the <a href='https://github.com/sahat/newedenfaces-react'>Source Code</a> behind this project on GitHub.</p>
-              <p>© 2015 Sahat Yalkabov.</p>
+              <p>Copyright © 2014 - 2016 版权所有 盗版不究</p>
             </div>
             <div className='col-sm-7 hidden-xs'>
               <h3 className='lead'><strong>Leaderboard</strong> Top 5 Characters</h3>
