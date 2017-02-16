@@ -64,6 +64,7 @@ class Footer extends React.Component {
               <p>Powered by <strong>Node.js</strong>, <strong>MongoDB</strong> and <strong>React</strong> with Flux architecture and server-side rendering.</p>
               <p>Copyright © 2013-2017 爵盾实业有限公司 All Rights Reserved.</p>
               <p>沪ICP备13039417号-1(备案号与网站一致)</p>
+              <p>热门关键字：紫铜门　铜门饰品　铜门屏风　铜纱门　紫铜庭院门　紫铜旋转门　紫铜工艺品</p>
             </div>
             <div className='col-sm-7 hidden-xs'>
               <h3 className='lead'><strong>Leaderboard</strong> Top 5 Characters</h3>
