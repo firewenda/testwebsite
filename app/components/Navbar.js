@@ -75,17 +75,13 @@ class Navbar extends React.Component {
               <div className='tri'></div>
               <div className='tri invert'></div>
             </span>
-            爵盾
-            {/*<span className='badge badge-up badge-danger'>{this.state.onlineUsers}</span>*/}
+            NEF
+            <span className='badge badge-up badge-danger'>{this.state.onlineUsers}</span>
           </Link>
         </div>
         <div id='navbar' className='navbar-collapse collapse'>
           <ul className='nav navbar-nav'>
-            <li><Link to='/'>首页</Link></li>
-            <li><Link to='/stats'>公司简介</Link></li>
-            <li><Link to='/stats'>产品展示</Link></li>
-            <li><Link to='/stats'>联系我们</Link></li>
-
+            <li><Link to='/'>index</Link></li>
             <li><Link to='/stats'>Stats</Link></li>
             <li className='dropdown'>
               <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Top 100 <span className='caret'></span></a>

@@ -8,7 +8,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Topbar />
         <Navbar history={this.props.history} />
         <Slider />
         {this.props.children}
